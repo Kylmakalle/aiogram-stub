@@ -7,9 +7,10 @@ __pycache__
 *.log
 *.mo
 
-venv/
+*.env
+!example.env
 
-mybot/
+venv/
 
 private/*
 private_modules/*

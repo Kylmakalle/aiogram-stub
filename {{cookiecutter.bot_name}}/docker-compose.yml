@@ -26,7 +26,7 @@ services:
     restart: always
     volumes:
     - ".:/usr/src/bot"
-    command: "python3 bot.py" #"sh -ac 'make build; python3 bot.py'"
+    command: "python3 bot.py" #"sh -ac 'pybabel compile -d locales -D mybot; python3 bot.py'"
     env_file: production.env
     networks:
     - nw
