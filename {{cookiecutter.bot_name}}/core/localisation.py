@@ -4,7 +4,7 @@ from aiogram.contrib.middlewares.i18n import I18nMiddleware
 
 I18N_DOMAIN = '{{cookiecutter.bot_name}}'
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(Path(__file__).parent).parent
 LOCALES_DIR = BASE_DIR / 'locales'
 
 from typing import Any, Tuple
