@@ -1,0 +1,14 @@
+.idea/*
+.env/*
+
+*.py[cod]
+__pycache__
+
+*.log
+*.mo
+
+*.env
+!example.env
+
+venv/
+

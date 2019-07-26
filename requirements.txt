@@ -1,0 +1,4 @@
+-r private-requirements.txt
+aiogram
+motor
+ujson

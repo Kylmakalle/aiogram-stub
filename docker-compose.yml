@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: "{{cookiecutter.bot_name}}-mongodb"
+    environment:
+    - MONGO_DATA_DIR=/data/db
+    - MONGO_LOG_DIR=/dev/null
+    volumes:
+    - dbdata:/data/db
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+    ports:
+    - 127.0.0.1:27017:27017
+    networks:
+    - nw
+
+  bot:
+    container_name: "{{cookiecutter.bot_name}}"
+    logging:
+      options:
+        max-size: "100M"
+        max-file: "10"
+    build: .
+    restart: always
+    volumes:
+    - ".:/usr/src/bot"
+    command: "python3 bot.py" #"sh -ac 'make build; python3 bot.py'"
+    env_file: production.env
+    networks:
+    - nw
+    - proxy
+
+
+volumes:
+  dbdata:
+
+networks:
+  nw:
+    driver: bridge
+  proxy:
+    external: true
