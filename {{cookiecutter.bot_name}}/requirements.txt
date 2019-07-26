@@ -2,3 +2,4 @@
 aiogram
 motor
 ujson
+sentry_sdk
