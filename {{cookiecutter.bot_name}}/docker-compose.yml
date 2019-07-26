@@ -30,7 +30,6 @@ services:
     env_file: production.env
     networks:
     - nw
-    - proxy
 
 
 volumes:
@@ -39,5 +38,3 @@ volumes:
 networks:
   nw:
     driver: bridge
-  proxy:
-    external: true
