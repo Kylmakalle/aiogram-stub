@@ -2,7 +2,7 @@
 
 Template for creating flexible [aiogram](https://github.com/aiogram) bots fast
 
-Supports MongoDB, Mixpanel and Sentry _out of the box_
+Supports **MongoDB**, **Mixpanel** and **Sentry** _out of the box_
 
 ## Installation
 
