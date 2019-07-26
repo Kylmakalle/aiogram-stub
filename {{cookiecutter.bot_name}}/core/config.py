@@ -12,8 +12,8 @@ def get_value(key, default=None, converter=None):
 
 # Converter, if you need to parse lists/tuples
 # ADMINS=[1234,1337228]
-# admin_ids = get_value('ADMINS', [1234], mylist)
-def mylist(s):
+# admin_ids = get_value('ADMINS', [1234], make_list_from_env)
+def make_list_from_env(s):
     x = ast.literal_eval(s)
     return x
 
