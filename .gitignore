@@ -12,3 +12,7 @@ __pycache__
 
 venv/
 
+private/*
+private_modules/*
+
+private-requirements.txt
