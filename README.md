@@ -33,3 +33,18 @@ private/*
 private_modules/*
 private-requirements.txt
 ```
+
+## Fast restart
+No container rebuild required
+```bash
+cd mybot
+docker-compose restart bot
+```
+
+## Translations
+
+Take a look at official [example](https://github.com/aiogram/aiogram/blob/dev-2.x/examples/i18n_example.py)
+
+Use `./update_locales.sh` to make changes on your `.po` files fast!
+
+Check `core/localisation.py` for more info and tweaks
