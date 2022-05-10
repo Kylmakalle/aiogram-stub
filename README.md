@@ -1,3 +1,8 @@
+> Repository Archived. Take a look at
+> - https://github.com/Forden/aiogram-bot-template
+> - https://github.com/Latand/tgbot_template
+> - https://github.com/Tishka17/tgbot_template
+
 # Aiogram cookiecutter
 
 Template for creating flexible [aiogram](https://github.com/aiogram) bots fast
